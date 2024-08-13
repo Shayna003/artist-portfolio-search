@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio Search</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <div class="search-container">
+      <form id="search-form">
+        
+          <div class="logo-div">
+            <button id="search-button" type="submit">
+            <img src="logo.png" id="logo">
+          </button>
+          </div>
+          
+        <div class="filters-container">
+          <input type="hidden" id="color" name="color"> <!-- Hidden input for color profile -->
+    
+          <div id="color-chooser">
+            <div class="add-color-container">
+                <div id="color-picker-container">
+                  <p>Add up to 5 colors</p>
+                  <input type="color" class="color-picker">
+                  <button type="button" id="add-color">+</button>
+                </div>
+                <div id="threshold-container">
+                    <p>Color Matching Threshold</p>
+                    <input type="range" id="threshold" name="threshold" min="0" max="1000" value="50">
+                    <p id="thresholdValue">50</p>
+                </div> 
+            </div>
+            <ul id="color-list"></ul>
+          </div>
+    
+
+          <div class="right-filters-container">
+            <div class="rating-container">
+              <div class="slider-item">
+                <div class="rating-label">Rating Range</div>
+                <div class="slider-container">
+                  <div class="range-slider">
+                      <div class="slider-track-rating"></div>
+                      <input type="range" min="0" max="100" value="0" id="min-rating">
+                      <input type="range" min="0" max="100" value="100" id="max-rating">
+                  </div>
+                  <div class="value-labels">
+                      <span id="min-value-rating">0</span>
+                      <span id="max-value-rating">100</span>
+                  </div>
+                </div>
+              </div>
+  
+              <div class="slider-item">
+                <div class="rating-label">Text Density Range</div>
+                <div class="slider-container">
+                  <div class="range-slider">
+                      <div class="slider-track-text"></div>
+                      <input type="range" min="0" max="100" value="0" id="min-text">
+                      <input type="range" min="0" max="100" value="100" id="max-text">
+                  </div>
+                  <div class="value-labels">
+                      <span id="min-value-text">0</span>
+                      <span id="max-value-text">100</span>
+                  </div>
+                </div>
+              </div>
+  
+              <div class="slider-item">
+                <div class="rating-label">Color Variance Range</div>
+                <div class="slider-container">
+                  
+                  <div class="range-slider">
+                      <div class="slider-track-variance"></div>
+                      <input type="range" min="0" max="12000" value="0" id="min-variance">
+                      <input type="range" min="0" max="12000" value="12000" id="max-variance">
+                  </div>
+                  <div class="value-labels">
+                      <span id="min-value-variance">0</span>
+                      <span id="max-value-variance">12000</span>
+                  </div>
+                </div>
+              </div>
+  
+              <div class="slider-item">
+                <div class="rating-label">Layout Complexity Range</div>
+                <div class="slider-container">
+                  <div class="range-slider">
+                      <div class="slider-track-layout"></div>
+                      <input type="range" min="0" max="100" value="0" id="min-layout">
+                      <input type="range" min="0" max="100" value="100" id="max-layout">
+                  </div>
+                  <div class="value-labels">
+                      <span id="min-value-layout">0</span>
+                      <span id="max-value-layout">100</span>
+                  </div>
+                </div>
+              </div>
+              </div>
+  
+            <div class="keyword-container">
+              <input type="text" id="keyword" name="keyword" placeholder="Keyword">
+              <div class="category-div">
+                <label for="category">Category</label>
+                <select id="category" name="category">
+                  <option value="">All Categories</option>
+                  <option value="Empty">Empty</option>
+                  <option value="Minimal Text">Minimal Text</option>
+                  <option value="Complex Design">Complex Design</option>
+                  <option value="Highly Detailed">Highly Detailed</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+
+    <div class="content-container">
+      <ul id="portfolio-list"></ul>
+    </div>
+
+    <div id="pagination-controls">
+      <button id="first-page">First</button>
+      <button id="prev-page">Previous</button>
+      <span id="page-info"></span>
+      <button id="next-page">Next</button>
+      <button id="last-page">Last</button>
+      <div class="go-to-page-container">
+          <label for="go-to-page-input">Go to Page:</label>
+          <input type="number" id="go-to-page-input" min="1">
+          <button id="go-to-page-button">Go</button>
+      </div>
+    </div>
+    
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
