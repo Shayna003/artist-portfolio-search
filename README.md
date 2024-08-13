@@ -1,5 +1,8 @@
 # Artist Portolio Website Crawler and Search Engine
 
+![website-screenshot](https://github.com/user-attachments/assets/5e518d59-3e81-453e-a841-a88dc052ec32)
+
+
 ---
 
 This is a webcrawler + data processer to index artist portfolio website information to allow search based on:
@@ -8,8 +11,8 @@ This is a webcrawler + data processer to index artist portfolio website informat
 - rating (based on my personal taste of the website's screenshot, 0-100, I rated 2000 and used a CNN model to rate the rest)
 - text density (text pixels to non text pixels ratio)
 - color variance
-- layout complexity (base don edge detection)
-- category (empty, miminal text, complex design, highliy detailed) (classified based on the above 3 features)
+- layout complexity (based on edge detection)
+- visual category (empty, miminal text, complex design, highliy detailed) (classified based on the above 3 features)
 - keyword (matches for the whole word in the url, only one keyowrd allowed)
 
 Each entry displays:
@@ -25,6 +28,10 @@ I tried different strategies to crawl the urls:
 - crawl specific artist portfolio showcase websites, such as webflow, but they have very limited amount
 - the most efficient method, use database of contemporary artist names and crawl for their websites by filtering top 5 results of search engine searching for their name
 All of these methods are lmited in their ability to filter out random, unrelated websites, thus my database has lots of irrelevant websites
+
+Also, there might be some screenshots with the same domain but different url sharing the same screeshot, it's because of a mistake in the naming convetion of the screenshot files, which strips out everything after the first "/" in the url (except for http:// and https://).
+
+The website might look terrible on larger screens and smaller screens, but should work for most desktop screen sizes.
 
 ---
 
