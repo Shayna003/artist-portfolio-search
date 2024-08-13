@@ -39,10 +39,11 @@ I was inspired to make this project because I was helping my friend make an arti
 
 ---
 
-The database currently has 13000 entires of artist portolio websites, some of which happen to be irrelevant, you can help me remove them by pressing the "delete" button.
-The website is hosted live at https://portfolios.hopto.org/
-The portfolio entries are in JSON format availablea at https://portfolios.hopto.org/api/portfolios
+The database currently has 13000+ entires of artist portolio websites, some of which happen to be irrelevant, you can help me remove them by pressing the "delete" button.
 
+The website is hosted live:
+- https://portfolios.hopto.org/
+- The portfolio entries are in JSON format availablea at https://portfolios.hopto.org/api/portfolios
 ---
 
-This project is not being actively maintained. The crawler code needs to be adjusted to be usable.
+This project is not being actively maintained. The crawler code needs to be adjusted to be usable. The trained model parameters of the CNN ratings model, and 13000+ reduced size screenshot images are stored in a zip file in releases.
