@@ -38,9 +38,11 @@ The website might look terrible on larger screens and smaller screens, but shoul
 I was inspired to make this project because I was helping my friend make an artist portfolio website, so I wanted to gather some inspirations. I hope this project could be helpful to you in the same way as well.
 
 ---
+
 The database currently has 13000 entires of artist portolio websites, some of which happen to be irrelevant, you can help me remove them by pressing the "delete" button.
 The website is hosted live at https://portfolios.hopto.org/
 The portfolio entries are in JSON format availablea at https://portfolios.hopto.org/api/portfolios
+
 ---
 
 This project is not being actively maintained. The crawler code needs to be adjusted to be usable.
