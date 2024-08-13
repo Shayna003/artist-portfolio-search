@@ -26,8 +26,8 @@ Each entry displays:
 I tried different strategies to crawl the urls:
 - select top 100 search engine results of "artist portfolio websites" and crawl for portfolio website urls in those webpages, crawl depth = 1, but most are repeated and are very limited in numbers
 - crawl specific artist portfolio showcase websites, such as webflow, but they have very limited amount
-- the most efficient method, use database of contemporary artist names and crawl for their websites by filtering top 5 results of search engine searching for their name
-All of these methods are lmited in their ability to filter out random, unrelated websites, thus my database has lots of irrelevant websites
+- the most efficient method, use public database of contemporary artist names and crawl for their websites by filtering top 5 results of using search engine to search for their name.
+All of these methods are lmited in their ability to filter out random, unrelated websites, thus my database has lots of irrelevant websites.
 
 Also, there might be some screenshots with the same domain but different url sharing the same screeshot, it's because of a mistake in the naming convetion of the screenshot files, which strips out everything after the first "/" in the url (except for http:// and https://).
 
